@@ -22,7 +22,7 @@ export const updateBookingStatusAction =
         Authorization: `bearer ${userToken}`,
       };
       const response = await axios.put(
-        `${process.env.REACT_APP_BASE_URL}/travelious_tour`,
+        `https://longhaired-talented-broccoli.glitch.me/travelious_tour`,
         newObj,
         {
           headers: header,
@@ -44,7 +44,7 @@ export const newBookingAction = (newObj) => async (dispatch) => {
       Authorization: `bearer ${userToken}`,
     };
     const response = await axios.post(
-      `${process.env.REACT_APP_BASE_URL}/travelious_tour`,
+      `https://longhaired-talented-broccoli.glitch.me/travelious_tour`,
       newObj,
       {
         headers: header,
@@ -69,7 +69,7 @@ export const getUserDetailAction = () => async (dispatch) => {
         Authorization: `bearer ${userToken}`,
       };
       const response = await axios.get(
-        `${process.env.REACT_APP_BASE_URL}/travelious_user`,
+        `https://longhaired-talented-broccoli.glitch.me/travelious_user`,
         {
           headers: header,
         }
