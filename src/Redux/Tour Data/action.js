@@ -10,7 +10,7 @@ export const UPDATE_TOUR_DATA = "UPDATE_TOUR_DATA";
 export const addTour = (render, sortOrder , country ) => async (dispatch) => {
     try {
       // let apiUrl = `https://dull-puce-crocodile-wear.cyclic.app/tours?_limit=12&_page=${render}&_sort=cost&_order=${sortOrder}`;
-      let apiUrl = `${process.env.REACT_APP_BASE_URL}/travelious_tour?page=${render}`
+      let apiUrl = `https://longhaired-talented-broccoli.glitch.me/travelious_tour?page=${render}`
 
       if (country) {
         apiUrl += `&Country=${country}`;
